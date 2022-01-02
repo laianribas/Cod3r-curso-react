@@ -1,7 +1,13 @@
 import React from 'react'
 
 function Primeiro() {
-  return <h2>Primeiro JSX</h2>
+  const msg = 'Seja Bem-Vindo(a)'
+  return (
+    <div>
+      <h2>Primeiro JSX</h2>
+      <p>{msg}</p>
+    </div>
+  )
 }
 
 export default Primeiro
