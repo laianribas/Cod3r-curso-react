@@ -9,18 +9,8 @@ const element = document.getElementById('root')
 ReactDOM.render(
   <div id="app">
     <Primeiro />
-    <ComParametro
-      titulo="Nota do Aluno"
-      aluno="Pedro"
-      nota="8,5"
-      status="Aprovado"
-    />
-    <ComParametro
-      titulo="Nota do Aluno"
-      aluno="Maria"
-      nota="8"
-      status="Aprovado"
-    />
+    <ComParametro titulo="Nota do Aluno" aluno="Pedro" nota={8.5} />
+    <ComParametro titulo="Nota do Aluno" aluno="Maria" nota={8} />
   </div>,
   element
 )
