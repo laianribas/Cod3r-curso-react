@@ -21,8 +21,6 @@ export default () => {
         <Card titulo="#08 - Renderização Condifional" color="#982365">
           <ParOuImpar numero={21} />
           <UsuarioInfo usuario={{ nome: 'Fernando' }} />
-          <UsuarioInfo usuario={{ email: 'Fernando' }} />
-          <UsuarioInfo usuario={{}} />
         </Card>
         <Card titulo="#07 - Desafio Repetição" color="#51cc61">
           <ListaProdutos />
