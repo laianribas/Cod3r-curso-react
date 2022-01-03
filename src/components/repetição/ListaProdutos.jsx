@@ -14,7 +14,7 @@ export default props => {
         {ListaProdutos.map((produto, i) => {
           console.log(i)
           return (
-            <tr className={i % 2 == 0 ? 'Par' : 'Impar'}>
+            <tr className={i % 2 === 0 ? 'Par' : 'Impar'}>
               <td>{produto.id}</td>
               <td>{produto.product}</td>
               <td>{produto.price}</td>
