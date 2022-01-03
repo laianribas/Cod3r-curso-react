@@ -3,18 +3,12 @@ import React, { useState } from "react";
 import IndiretaFilho from "./IndiretaFilho";
 
 export default (props) => {
-//   const data = {
-//     nome: "?",
-//     idade: 0,
-//     nerd: false,
-//   };
     const [data, setData] = useState({
         nome: "?",
         idade: 0,
         nerd: false
     })
   function fornecerInformacoes(nomePai, idadePai, nerdPai) {
-    console.log(nomePai, idadePai, nerdPai);
     setData(() => {
         return {
             nome: nomePai,

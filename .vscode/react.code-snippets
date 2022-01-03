@@ -1,0 +1,17 @@
+{
+	"react-snippet":{
+		"scope": "javascript, jsx",
+		"prefix":"!react",
+		"body":[
+			"import React from 'react';",
+			"",
+			"const ${1:Function} = (props) => {",
+    		"\treturn (",
+			" \t \t",
+    		"\t)",
+			"}",
+			"",
+			"export default ${1:Function}"
+		]
+	}
+}
