@@ -11,6 +11,7 @@ import FamiliaMembro from './components/Basicos/FamiliaMembro'
 import ListaAlunos from './components/repetição/ListaAlunos'
 import ListaProdutos from './components/repetição/ListaProdutos'
 import ParOuImpar from './components/condicional/ParOuImpar'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
 
 export default () => {
   return (
@@ -19,6 +20,9 @@ export default () => {
       <div className="Wrapper">
         <Card titulo="#08 - Renderização Condifional" color="#982365">
           <ParOuImpar numero={21} />
+          <UsuarioInfo usuario={{ nome: 'Fernando' }} />
+          <UsuarioInfo usuario={{ email: 'Fernando' }} />
+          <UsuarioInfo usuario={{}} />
         </Card>
         <Card titulo="#07 - Desafio Repetição" color="#51cc61">
           <ListaProdutos />
