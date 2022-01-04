@@ -1,26 +1,34 @@
 /* eslint-disable import/no-anonymous-default-export */
-import "./App.css";
-import React from "react";
+import './App.css'
+import React from 'react'
 
-import Primeiro from "./components/Basicos/Primeiro";
-import ComParametro from "./components/Basicos/ComParametro";
-import Fragmento from "./components/Basicos/Fragmento";
-import NumeroAleatorio from "./components/Basicos/NumeroAleatorio";
-import Card from "./components/layout/Card";
-import Familia from "./components/Basicos/Familia";
-import FamiliaMembro from "./components/Basicos/FamiliaMembro";
-import ListaAlunos from "./components/repetição/ListaAlunos";
-import ListaProdutos from "./components/repetição/ListaProdutos";
-import ParOuImpar from "./components/condicional/ParOuImpar";
-import UsuarioInfo from "./components/condicional/UsuarioInfo";
-import DiretaPai from "./components/Comunicacao/DiretaPai";
-import IndiretaPai from "./components/Comunicacao/IndiretaPai";
+import Primeiro from './components/Basicos/Primeiro'
+import ComParametro from './components/Basicos/ComParametro'
+import Fragmento from './components/Basicos/Fragmento'
+import NumeroAleatorio from './components/Basicos/NumeroAleatorio'
+import Card from './components/layout/Card'
+import Familia from './components/Basicos/Familia'
+import FamiliaMembro from './components/Basicos/FamiliaMembro'
+import ListaAlunos from './components/repetição/ListaAlunos'
+import ListaProdutos from './components/repetição/ListaProdutos'
+import ParOuImpar from './components/condicional/ParOuImpar'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
+import DiretaPai from './components/Comunicacao/DiretaPai'
+import IndiretaPai from './components/Comunicacao/IndiretaPai'
+import Input from './components/Formulario/Input'
+import Contador from './components/Contador/Contador'
 
 export default () => {
   return (
     <div className="App">
       <h1>Fundamentos React 2</h1>
       <div className="Wrapper">
+        <Card titulo="#12 - Contador Baseado em classe" color="#424242">
+          <Contador numeroInicial={100} />
+        </Card>
+        <Card titulo="#11 - Componente Controlado" color="#e45f56">
+          <Input />
+        </Card>
         <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
           <IndiretaPai />
         </Card>
@@ -29,7 +37,7 @@ export default () => {
         </Card>
         <Card titulo="#08 - Renderização Condifional" color="#982365">
           <ParOuImpar numero={21} />
-          <UsuarioInfo usuario={{ nome: "Fernando" }} />
+          <UsuarioInfo usuario={{ nome: 'Fernando' }} />
         </Card>
         <Card titulo="#07 - Desafio Repetição" color="#51cc61">
           <ListaProdutos />
@@ -59,5 +67,5 @@ export default () => {
         </Card>
       </div>
     </div>
-  );
-};
+  )
+}
